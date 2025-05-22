@@ -43,7 +43,7 @@ trivy image nginx:latest
 ``` 
 trivy fs /path/to/your/project
 ```
-# trivy repo https://github.com/<username>/<repository>
+# Scan Git Repository
 ```
 trivy repo https://github.com/<username>/<repository>
 ```
