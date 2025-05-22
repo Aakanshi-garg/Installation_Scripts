@@ -1,5 +1,11 @@
 
-# Docker Install
+# 🐳 Install Docker on Ubuntu
+This guide provides a shell script to install Docker Engine, Docker CLI, containerd, and the Docker Compose plugin on an Ubuntu system.
+# Prerequisites
+- Ubuntu-based system 
+- sudo privileges
+- Internet connection
+# Installation Script
 ``` bash
 #!/bin/bash
 
@@ -37,6 +43,24 @@ chmod +x install_docker.sh
 Then, you can run the script using:
 ``` bash
 ./install_docker.sh
+```
+#  Verify Docker Installation
+Check Docker version:
+``` bash
+docker --version
+```
+Run a test container:
+``` bash
+sudo docker run hello-world
+```
+# Enable Docker to Start on Boot
+``` bash
+sudo systemctl enable docker
+```
+To use Docker as a non-root user:
+``` bash
+sudo usermod -aG docker $USER
+
 ```
 
 
