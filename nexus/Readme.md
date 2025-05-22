@@ -48,10 +48,10 @@ To create a Docker container running Nexus 3 and exposing it on port 8081, you c
 docker run -d --name nexus -p 8081:8081 sonatype/nexus3:latest
 ```
 This command does the following:
-- -d: Detaches the container and runs it in the background.
-- --name nexus: Specifies the name of the container as "nexus".
-- -p 8081:8081: Maps port 8081 on the host to port 8081 on the container, allowing access to Nexus through port 8081.
-- sonatype/nexus3:latest: Specifies the Docker image to use for the container, in this case, the latest version of Nexus 3 from the Sonatype repository.
+- **-d**: Detaches the container and runs it in the background.
+- **--name nexus**: Specifies the name of the container as "nexus".
+- **-p 8081:8081**: Maps port 8081 on the host to port 8081 on the container, allowing access to Nexus through port 8081.
+- **sonatype/nexus3:latest**: Specifies the Docker image to use for the container, in this case, the latest version of Nexus 3 from the Sonatype repository.
 After running this command, Nexus will be accessible on your host machine at:
 ``` bash
 http://<server-public-ip>:8081
